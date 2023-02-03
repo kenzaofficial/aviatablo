@@ -1,5 +1,11 @@
 @import "variables";
 
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   width: 100%;
   max-width: 1180px;
@@ -54,9 +60,11 @@ html {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
   direction: ltr;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   margin: 0;
   background-color: $bg-primary;
 }

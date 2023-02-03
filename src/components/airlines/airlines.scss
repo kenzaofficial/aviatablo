@@ -11,6 +11,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px 10px;
+  @include media(XL) {
+    justify-content: flex-start;
+    column-gap: 15px;
+  }
 }
 
 .list-item__img-wrapper {

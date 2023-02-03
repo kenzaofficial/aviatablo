@@ -1,12 +1,15 @@
 .services {
   padding: 0 0 60px;
   @include media(L) {
-    padding: 32px 0 120px;
+    padding: 32px 0 75px;
   }
 }
 
 .services__container {
   padding: 0 8px;
+  @include media(XL) {
+    padding: 0 50px;
+  }
 }
 
 .services__list {
@@ -23,7 +26,6 @@
 }
 
 .card-services {
-  background-color: violet;
   display: grid;
   grid-template-columns: auto 70px;
   align-items: center;
@@ -33,13 +35,14 @@
   border-radius: 6px;
   @include media(M) {
     margin: 0;
-    padding: 26px 30px 20px;
+    padding: 26px 25px 20px;
     min-height: 190px;
   }
   @include media(L) {
     grid-template-columns: auto 115px;
     padding-bottom: 15px;
   }
+ 
   img {
     max-width: 160px;
     @include media(L) {
@@ -97,6 +100,11 @@
   line-height: 31px;
   font-weight: 700;
   color: $color-rating;
+  @include media(XL) {
+    margin-top: -60px;
+    font-size: 32px;
+    line-height: 41px;
+  }
   &::before {
     position: absolute;
     content: "";
@@ -107,6 +115,10 @@
     background-color: rgba($color-text-primary, $alpha: 0.52);
     @include media(M) {
       top: -45px;
+    }
+    @include media(XL) {
+      top: -30px;
+      left: 25px;
     }
   }
 }

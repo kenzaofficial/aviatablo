@@ -4,11 +4,9 @@
   @include media(M) {
     margin-bottom: 30px;
   }
-}
-
-.advantages__container {
   @include media(XL) {
-    padding: 0 50px;
+    margin-top: -125px;
+    margin-bottom: 50px;
   }
 }
 
@@ -22,7 +20,8 @@
   font-size: 9px;
   line-height: 12px;
   background-color: $bg-primary;
-  box-shadow: 0px 6px 10px 12px #c4d9e136;
+  box-shadow: 0px 12px 20px 12px #D2ECF64A;
+
   @include media(S) {
     gap: 5px 40px;
   }
@@ -36,13 +35,14 @@
   }
   @include media(XL) {
     justify-content: space-between;
-    padding: 10px 45px 14px;
-    column-gap: 100px;
+    padding: 35px 90px;
+    column-gap: 120px;
   }
   .list-item {
     display: flex;
     align-items: center;
     .list-item__img-wrapper {
+      flex-shrink: 0;
       max-width: 22px;
       height: 22px;
       margin-right: 5px;
