@@ -1,4 +1,5 @@
 .hero {
+  margin-top: -1px;
   padding: 55px 0 30px;
   background: $bg-secondary url(../img/bg-mobile.png) 100% 0 no-repeat;
   @include media(S) {
@@ -8,7 +9,7 @@
     padding: 60px 0;
   }
   @include media(XL) {
-    min-height: 420px;
+    min-height: 390px;
     background: $bg-secondary url(../img/bg-desktop.png) 0 0 no-repeat;
   }
 
@@ -22,7 +23,6 @@
     }
     @include media(L) {
       max-width: 450px;
-
     }
     @include media(XL) {
       max-width: 550px;

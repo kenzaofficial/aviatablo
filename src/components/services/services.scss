@@ -15,7 +15,7 @@
 .services__list {
   display: grid;
   gap: 15px 0;
-  @include media(M) {
+  @include media(S) {
     grid-template-columns: auto auto;
     gap: 20px;
   }
@@ -33,33 +33,21 @@
   gap: 4px;
   box-shadow: 0px 12px 20px 12px #d2ecf64a;
   border-radius: 6px;
+  min-height: 100%;
   @include media(M) {
     margin: 0;
     padding: 26px 25px 20px;
     min-height: 190px;
   }
-  @include media(L) {
+  @include media(XL) {
     grid-template-columns: auto 115px;
     padding-bottom: 15px;
   }
- 
+
   img {
     max-width: 160px;
     @include media(L) {
       max-width: 280px;
-    }
-  }
-}
-
-.card-services__title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  @include media(L) {
-    font-size: 24px;
-    line-height: 30px;
-    span {
-      display: none;
     }
   }
 }
@@ -69,6 +57,7 @@
   font-size: 12px;
   line-height: 18px;
   color: $color-text-secondary;
+
   @include media(L) {
     max-width: 440px;
     font-size: 16px;
