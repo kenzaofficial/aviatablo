@@ -1,0 +1,112 @@
+.services {
+  padding: 0 0 60px;
+  @include media(L) {
+    padding: 32px 0 120px;
+  }
+}
+
+.services__container {
+  padding: 0 8px;
+}
+
+.services__list {
+  display: grid;
+  gap: 15px 0;
+  @include media(M) {
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  @include media(XL) {
+    grid-template-columns: auto auto;
+    gap: 32px 35px;
+  }
+}
+
+.card-services {
+  background-color: violet;
+  display: grid;
+  grid-template-columns: auto 70px;
+  align-items: center;
+  padding: 18px 13px;
+  gap: 4px;
+  box-shadow: 0px 12px 20px 12px #d2ecf64a;
+  border-radius: 6px;
+  @include media(M) {
+    margin: 0;
+    padding: 26px 30px 20px;
+    min-height: 190px;
+  }
+  @include media(L) {
+    grid-template-columns: auto 115px;
+    padding-bottom: 15px;
+  }
+  img {
+    max-width: 160px;
+    @include media(L) {
+      max-width: 280px;
+    }
+  }
+}
+
+.card-services__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  @include media(L) {
+    font-size: 24px;
+    line-height: 30px;
+    span {
+      display: none;
+    }
+  }
+}
+
+.card-services__description {
+  grid-column: 1/2;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-text-secondary;
+  @include media(L) {
+    max-width: 440px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.card-serivces__link {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-link;
+  transition: 0.3s;
+  &:hover {
+    color: $color-hover;
+  }
+  &:active {
+    color: $color-text-primary;
+  }
+  @include media(L) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.card-services__rating {
+  text-align: right;
+  position: relative;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  color: $color-rating;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100px;
+    top: -35px;
+    left: 12px;
+    background-color: rgba($color-text-primary, $alpha: 0.52);
+    @include media(M) {
+      top: -45px;
+    }
+  }
+}

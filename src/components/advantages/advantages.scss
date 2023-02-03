@@ -1,8 +1,9 @@
 .advantages {
-  // padding: 8px 0;
-  // @include media(M) {
-  //   padding: 14px 0;
-  // }
+  margin-top: -10px;
+  padding-bottom: 16px;
+  @include media(M) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages__container {
@@ -17,12 +18,14 @@
   justify-content: center;
   max-width: 500px;
   margin: 0 auto;
+  gap: 5px 20px;
   padding: 20px 10px;
   border-radius: 6px;
   font-size: 9px;
   line-height: 12px;
   background-color: $bg-primary;
-  gap: 5px;
+  box-shadow: 0px 6px 10px 12px #c4d9e136;
+
   @include media(M) {
     max-width: none;
     padding: 15px 30px;
