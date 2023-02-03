@@ -1,0 +1,29 @@
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  font-size: 7px;
+  line-height: 5px;
+  @include media(S) {
+    font-size: 11px;
+    line-height: 10px;
+  }
+  span {
+    color: $color-text-thirdly;
+    font-size: 13px;
+    line-height: 10px;
+    font-weight: 700;
+    @include media(S) {
+      font-size: 20px;
+      line-height: 17px;
+    }
+  }
+  img {
+    width: 24px;
+    margin-right: 2px;
+    @include media(S) {
+      width: 46px;
+      margin-right: 7px;
+    }
+  }
+}

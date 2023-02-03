@@ -1,0 +1,35 @@
+// Responsive
+
+$S: 576px;
+$M: 768px;
+$L: 992px;
+$XL: 1200px;
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+// Palette
+$color-black: #000;
+$color-white: #fff;
+$color-elephant: #23333e;
+$color-catalina-blue: #203f68;
+$color-raven: #636d79;
+$color-pacific-blue: #04a2d0;
+$color-curious-blue: #3e99c5;
+$color-bossanova: #5b3f5c;
+$color-pattens-blue: #d2ecf6;
+
+//text
+$color-text-primary: $color-catalina-blue;
+$color-text-secondary: $color-raven;
+$color-text-thirdly: $color-pacific-blue;
+$color-link: $color-pacific-blue;
+$color-rating: $color-curious-blue;
+$color-hover: $color-bossanova;
+
+//backgrounds
+$bg-primary: $color-white;
+$bg-secondary: $color-pattens-blue;
+
+$box-shadow-primary: 0px 12px 20px 12px #d2ecf6;
+
+// Fonts
+$font-family-base: "Onest", "Helvetica", "Arial", sans-serif;
+$font-weight-regular: 400;
