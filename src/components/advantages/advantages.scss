@@ -8,27 +8,25 @@
     margin-top: -50px;
   }
   @media (min-width: 1920px) {
-    margin-top: -100px;
+    margin-top: -110px;
     margin-bottom: 50px;
   }
 }
 
 .advantages__list {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 5px 20px;
+  display: grid;
   padding: 20px 10px;
   border-radius: 6px;
+  background-color: $bg-primary;
+  box-shadow: 0 12px 20px 12px #d2ecf64a;
   font-size: 9px;
   line-height: 12px;
-  background-color: $bg-primary;
-  box-shadow: 0px 12px 20px 12px #d2ecf64a;
-
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
   @include media(S) {
+    font-size: 12px;
     gap: 5px 40px;
   }
-
   @include media(M) {
     max-width: none;
     padding: 15px 30px;
@@ -48,7 +46,7 @@
       flex-shrink: 0;
       max-width: 22px;
       height: 22px;
-      margin-right: 5px;
+      margin-right: 1px;
       @include media(M) {
         max-width: 46px;
         height: 46px;

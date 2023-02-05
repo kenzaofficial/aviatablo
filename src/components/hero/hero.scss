@@ -9,10 +9,11 @@
     padding: 60px 0;
   }
   @include media(XL) {
-    min-height: 390px;
-    background: $bg-secondary url(../img/bg-desktop.png) 0 0 no-repeat;
+    min-height: 405px;
+    background:
+      url(../img/bg-desktop.png) 0 0 no-repeat,
+      url(../img/bg.png) 0 -75px no-repeat;
   }
-
   .hero__content {
     @include media(S) {
       max-width: 250px;
@@ -28,7 +29,6 @@
       max-width: 550px;
     }
   }
-
   h1 {
     margin-bottom: 5px;
     font-size: 20px;
@@ -42,8 +42,8 @@
     @include media(XL) {
       margin-bottom: 25px;
       font-size: 56px;
-      line-height: 65px;
       font-weight: 800;
+      line-height: 65px;
     }
   }
   p {
@@ -55,8 +55,8 @@
     }
     @include media(XL) {
       font-size: 20px;
-      line-height: 34px;
       font-weight: 500;
+      line-height: 34px;
     }
   }
 }
@@ -77,16 +77,15 @@
   right: 20px;
   display: block;
   max-width: 160px;
-
   @include media(S) {
-    max-width: 250px;
-    left: 0;
     top: -25px;
+    left: 0;
+    max-width: 250px;
   }
   @include media(M) {
-    max-width: 350px;
-    left: 0;
     top: -25px;
+    left: 0;
+    max-width: 350px;
   }
   @include media(L) {
     top: -50px;
