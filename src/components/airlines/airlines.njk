@@ -1,0 +1,12 @@
+{% from 'components/list/list.njk' import list %}
+{% import './data.njk' as data%}
+<section class="airlines">
+  <h2 class="visually-hidden"> Airlines</h2>
+  <div class="airlines__container container">
+    <ul class="airliness__list">
+      {% for airline in data.airlines %}
+        {{ list( img=airline.img) }}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

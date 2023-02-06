@@ -1,10 +1,10 @@
 .header {
   position: relative;
   width: 100%;
-  background-color: $bg-secondary;
   padding: 8px 0 0;
+  background-color: $bg-secondary;
   @include media(XL) {
-    padding: 35px;
+    padding: 30px 0 0;
   }
 }
 
