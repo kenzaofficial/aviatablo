@@ -12,7 +12,7 @@
     min-height: 405px;
     background:
       url(../img/bg-desktop.png) 0 0 no-repeat,
-      url(../img/bg.png) 0 -75px no-repeat;
+      url(../img/bg.png) center -75px / cover no-repeat;
   }
   .hero__content {
     @include media(S) {
